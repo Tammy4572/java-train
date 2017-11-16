@@ -1,0 +1,44 @@
+CLASS SubwayTrain
+
+Name	Type	Description
+numOnBoard	int	number of people on board
+maxCapacity	int	maximum people allowed on board
+currentStation	int	current location of subway train
+numStations	int	# stations on the route
+destStation	int	destination station # of subway train
+awayStation	int	
+numAtStationOne	int
+numAtStationX	int
+
+METHODS (Behaviors)
+Name	Return type	Parameters	Description
+SubwayTrain	NA	Number of stations	Use to set numStations
+		Max Capacity	Use to set maxCapacity
+		startStation	Use to set currentStation
+ 	awayStation	Use to set awayStation	
+						 numAtStationOne   Use to set numAtStationOne	
+						 numAtStationX	       Use to set numAtStationX
+			Init numOnBoard = 0
+			Init destStation = currentStation
+			Instantiates a Java Random object
+getNumOnBoard	int
+getMaxCapacity	int
+getCurntStation	int
+getNumStations	int
+getDestStation	int
+getAwayStation	int
+getNumAtStationOne	int
+getNumAtStationX	int
+setAwayStaion	void
+setNumAtStationOne	void
+setNumAtStaionX	void
+moveToStation	void	Destination station	Displays: station # it’s leaving,
+			station # arriving at, & # passengers
+			on board
+unloadAll	void	none	Offload a random # of people
+			returned from  genRandNumber
+			Updates numOnBoard
+loadToCapacity	void	none	Loads a random # of people
+			returned from  genRandNumber,
+			but only up to maxCapacity.
+			Updates numOnBoard.
