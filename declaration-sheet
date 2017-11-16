@@ -1,4 +1,4 @@
-CLASS SubwayTrain
+CLASS SubwayTrain (mt)
 
 Name	Type	Description
 numOnBoard	int	number of people on board
